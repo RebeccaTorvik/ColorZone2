@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic">
+  <link href="styles/main.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+
+ <div class="navBlock">
+    <nav class="nav">
+      <ul>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776</label>
+        <li><a href=""><img src="images/logo.jpg" class="logo"></a></li>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="" class="nav-links">Services</a></li>
+        <li><a href=""class="nav-links">Book Online</a></li>
+        <li><a href=""class="nav-links">Gallery</a></li>
+        <li><a href=""class="nav-links">Contact</a></li>
+        <li><a class="login nav-links" href="">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+    
+  <div class="featured">
+    <h1>The <span class="colorZoneTitle">Color <br>Zone </span>Salon</h1>
+    <h2>Personalized One-On-One Service</h2>
+    <button class="btnInactive">Book Online</button> 
+  </div>
+
+  <section class="aboutSection">
+   <img class="aboutImg" src="images/salon.png">
+    <div class="aboutContent">
+      <h2 class="aboutTitle">About</h2>
+      <hr class="purpleLine">
+      <p class="aboutText1"> We offer a range of professional hair services for women, men, and children. We understand that you want a hair cut that looks fabulous and we have the expertise to make that happen. We’ll also make sure you feel relaxed, comfortable and well taken care of in our hair salon. As your hairdresser, we strive to earn your continued trust every day.</p>
+      <p class="aboutText2">Our philosophy is to provide our guests with the highest level of services and satisfaction possible. We strive to fulfill your requests to your precise specifications and to exceed your expectations. We provide a professional, nurturing and rejuvenating environment for hair styling where you always feel welcome and treated with kindness and respect.</p>
+    </div>
+  </section>
+
+  <section class="expert">
+    <div class="experience">
+     <img src="images/iconAward.png">
+      <h3>20 Years Experience</h3>
+      <p>With over 20 years of experience, we specialize in hair color, hair smoothing treatments and special hair treatments such as hair extensions.</p>
+    </div>
+    <div class="personalService">
+      <img src="images/iconHair.png">
+      <h3>Personalized Service</h3>
+      <p>We’ll ensure that your hairstyle and hair color are both consistent with current trends and right for your face type, skin tone, and personality.</p>
+    </div>
+    <div class="profProducts">
+      <img src="images/iconShampoo.png">
+      <h3>Professional Products</h3>
+      <p>Because quality is important to us, we use only salon professional products such as Artego color, Artego haircare, Eufora, Magic Sleek and Cezanne.</p>
+    </div>
+  </section>
+
+  <section class="services">
+       <div class="flex-container">
+      <div class="flex-slide box1">
+        <div class="flex-title flex-title-home">Cutting</div>
+        <div class="flex-about flex-about-home"><h4>Learn More</h4></div>
+      </div>
+      <div class="flex-slide box2">
+        <div class="flex-title">Coloring</div>
+        <div class="flex-about"><h4>Learn More</h4></div>
+      </div>
+      <div class="flex-slide box3">
+        <div class="flex-title">Extending</div>
+        <div class="flex-about"><h4>Learn More</h4>
+        </div>
+      </div>
+      <div class="flex-slide box4">
+        <div class="flex-title">Styling</div>
+            <div class="flex-about">
+              <h4>Learn More</h4>
+        </div>
+      </div>
+    </div>
+</div>
+  </section>
+
+
+
+
+<section class="bookOnlineSection">
+  <div class="bookTitleBtn">
+    <h2 class="bookOnlineTitle">Book Online</h2>
+    <hr class="purpleLine">
+    <p>Book an appointment with us online day or night. Choose a day and time that works for you, and we'll confirm your appointment through e-mail after your request has been received. Please know this is an appointment request.</p>
+    <button class="btnInactive" id="bookBtn">Book Online</button> 
+  </div>
+   <img class="bookPic" src="images/hairmodel2.png">
+</section>
+
+
+<section class="contactInfo">
+
+  <div class="emailContainer">
+    <h2 id="contactTitle">Contact</h2>
+  
+    <form action="action_page.php">  
+      <label for="fname">Name</label>
+       <input type="text" id="name" name="name">
+      <label for="emailAddress">Email</label>
+        <input type="text" id="emailAddress" name="emailAddress">
+      <label for="subject">Message</label>
+        <textarea id="subject" name="subject" style="height:100px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="contact">
+   <div class="phoneSocialBox">
+    <div id="phone">
+    <h5>Phone</h5>
+        <p>(240) 477-6392</p>
+    </div>
+    <div id="social">
+      <h5>Social</h5>
+          <img src="images/facebook.png">
+          <img src="images/insta.png">
+          <img src="images/twitter.png">
+      </div>
+    </div>
+    <div id="address">
+      <h5>Address</h5>
+          <p><a class="street" href="https://www.google.com/maps/place/253+Market+St+W+%23200,+Gaithersburg,+MD+20878/@39.1211934,-77.2379124,17z/data=!3m1!4b1!4m5!3m4!1s0x89b62d799c6bf7b3:0xc0d8ef1ca30c836e!8m2!3d39.1211934!4d-77.2357237" a target="_blank">253 Market Street West <br>Suite 200 <br>Gaithersburg, MD 20878</a></p>
+    </div>
+    <div>
+      <h5>Hours</h5>
+      <p> 
+        Sun: Closed<br>
+        Mon: Closed<br>
+        Tue: 10am-7pm<br>
+        Wed: 10am-7pm<br>
+        Thur: 10am-7pm<br>
+        Fri: 10am-7pm<br>
+        Sat: 10am-5pm
+      </p>
+      </div>
+    </div>
+    
+</section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+      <script src="script/index.js"></script>
+
+
+</body>
+</html>
+

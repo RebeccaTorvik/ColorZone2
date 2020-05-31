@@ -1,0 +1,612 @@
+
+/*Global*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+  font-size: 90px;
+  color: #f5f5f5;
+  /*border-left: 8px solid #681887;
+  padding-left: 15px;*/
+  height: 90px;
+}
+
+h3 {
+  font-size: 40px;
+  color: #f5f5f5;
+}
+
+p {
+  font-size: 20px;
+  color: #949494;
+  line-height: 140%;
+}
+
+section {
+  margin-top: 2%;
+  background-color:rgba(255, 255, 255, 0.12);
+}
+
+.purpleLine {
+	border-color: #681887;
+	width: 50px;
+	margin-bottom: 25px;
+	border-width: 3px;
+	border-style: solid;
+}
+
+/*Body--------------------------------------------*/
+
+body {
+    background-image: url('/images/tools2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display', serif;
+	background-color: black;
+	
+}
+
+
+/*Main Nav--------------------------------------------*/
+
+
+.navBlock ul {
+    list-style-type: none;
+    background-color: black;
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+
+
+  }
+
+  .navBlock li a {
+    display: flex;
+    align-items: center;
+    color: #f5f5f5;
+	text-decoration: none;
+	
+  }
+
+  .navBlock li a:hover:not(.active1) {
+    color: #7B7979;
+  }
+
+  .active1 {
+    color: #7B7979;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  #menu-toggle, .hamburger {
+	display: none;
+  }
+
+
+/*Featured Image--------------------------------------------*/
+
+.featured {
+  
+    text-align: right;
+    margin-right: 3%;
+}
+
+.featured h1 {
+    color: #f5f5f5;
+    font-size: 110px;
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+.colorZoneTitle {
+  color: #681887;
+}
+
+.featured h2 {
+  color: #7B7979;
+  font-size: 30px;
+  font-style: italic;
+  padding-bottom: 3%;
+   /* color: #05a1c9;*/
+}
+
+.btnInactive {
+  background-color: #681887;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  color: #f5f5f5;
+}
+
+.btnInactive:hover:not(.active3) {
+  background-color: #330c42;
+  color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+}
+
+/*About Section--------------------------------------------*/
+
+.aboutSection {
+  margin-top: 16%;
+	display: flex;
+	align-content: center;
+
+}
+
+
+.aboutContent {
+	margin: 4%;
+	
+}
+
+
+.aboutTitle{
+	margin-bottom: 18px;
+}
+
+.aboutText1 {
+  margin-bottom: 5%;
+}
+
+.aboutSection img {
+	height: 100%;
+	width: auto;
+
+}
+
+
+/*Expert Section--------------------------------------------*/
+
+.expert {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.experience {
+	padding-left: 5%;
+}
+
+.personalService {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.profProducts {
+	padding-right: 5%;
+}
+
+.expert div img {
+	height: 120px;
+
+}
+
+
+.expert h3 {
+	padding-top: 10%;
+	padding-bottom: 7%;
+}
+
+
+/*Services Section--------------------------------------------*/
+
+
+.services {
+	height: 100%;
+	margin-bottom: 5%;
+
+}
+
+
+
+.flex-container {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	@media screen (max-width: 768px) {
+	flex-direction: column;
+	}
+}
+
+.flex-title {
+	color: #f5f5f5;
+	position: relative;
+	font-size: 6vw;
+	top: 25%;
+	padding-left: 20%;
+	transform: rotate(90deg);
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+@media screen (max-width: 768px) {
+	transform: rotate(0deg);
+	}
+}
+
+.flex-about {
+	opacity: 0;
+	color: #ccc;
+	position: relative;
+	width: 70%;
+	font-size: 2vw;
+	padding: 5%;
+	top: 13%;
+	border-radius: 10px;
+	line-height: 1.3;
+	margin: auto;
+	text-align: left;
+	transform: rotate(0deg);
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	@media screen and (max-width: 768px) {
+		padding: 0%;
+		border: 0px solid #f1f1f1;
+	}
+}
+
+
+.flex-slide {
+	-webkit-flex: 1;  /* Safari 6.1+ */
+	-ms-flex: 1;  /* IE 10 */    
+	flex: 1;
+	cursor: pointer;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	@media screen and (max-width: 768px) {
+		overflow: auto;
+		overflow-x: hidden;
+	}
+}
+.flex-slide p {
+	@media screen and (max-width: 768px) {
+		font-size: 2em;
+	}
+} 
+
+.flex-slide:hover {
+	-webkit-flex-grow: 3;
+	flex-grow: 3;
+}
+.box1 {
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/cutting.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	@media screen and (min-width: 768px) {
+		@include animation-properties((animation: aboutFlexSlide, animation-duration: $defaultSeconds, animation-iteration-count: 1, animation-delay: 0s));
+	}
+}
+
+@keyframes aboutFlexSlide {
+	0% {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+	}
+	50% {
+		-webkit-flex-grow: 3;
+		flex-grow: 3;
+	}
+	100% {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+	}
+}
+
+.flex-title-home {
+	@media screen and (min-width: 768px) {
+		transform: rotate(90deg);
+		top: 15%;
+		@include animation-properties((animation: homeFlextitle, animation-duration: $defaultSeconds, animation-iteration-count: 1, animation-delay: 0s));
+	}
+}
+
+
+
+@keyframes homeFlextitle {
+	0% {
+		transform: rotate(90deg);
+		top: 15%;
+	}
+	50% {
+		transform: rotate(0deg);
+		top: 15%;
+	}
+	100% {
+		transform: rotate(90deg);
+		top: 15%;
+	}
+}
+
+.flex-about-home {
+	opacity: 0;
+	@media screen and (min-width: 768px) {
+		@include animation-properties((animation: flexAboutHome, animation-duration: $defaultSeconds, animation-iteration-count: 1, animation-delay: 0s));
+	}
+}
+
+@keyframes flexAboutHome {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+.box2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/dye.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;	
+}
+
+
+textarea {
+	width: 100%;	
+}
+.box4 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/style.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.box3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/extend.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+
+/*Book Online--------------------------------------------*/
+
+.bookOnlineSection {
+	display: flex;
+	margin-top: 56%;
+}
+
+
+.bookTitleBtn {
+margin-top: 7%;
+margin-left: 5%;
+margin-right: 5%;
+
+}
+
+.bookOnlineTitle {
+margin-bottom: 3%;
+}
+
+#bookBtn {
+	margin-top: 5%;
+	margin-bottom: 14%;
+}
+
+.bookPic {
+	width: 100%;
+	height: auto;
+}
+
+/*Contact--------------------------------------------*/
+
+
+h5 {
+	color: #f5f5f5;
+	font-size: 40px;
+	padding-bottom: 5%;
+}
+
+.contactInfo {
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  padding-top: 15%;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+
+}
+
+#contactTitle {
+  margin-bottom: 15%;
+ 
+}
+
+.contact img {
+	height: 17px;
+	margin-right: 10px;
+}
+
+.contactInfo h5 {
+  padding-bottom: 10%;
+}
+
+.phoneBox {
+	display: flex;
+	align-content: center;
+}
+
+.streetBox {
+	display: flex;
+	align-content: center;
+}
+
+.street {
+	color: #949494;
+}
+
+#social {
+	margin-top: 35%;
+	margin-bottom: 50%;
+}
+
+
+input[type=text], select, textarea {
+	background-color: #681887;
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */  
+	border-bottom: 1px solid #ccc; /* Gray border */
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 46px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit] {
+	background-color: #f5f5f5;
+	color: #681887;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 82%;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #7B7979;
+	color: #f5f5f5;
+  }
+  
+  .emailContainer {
+	width: 600px;
+	background-color: #681887;
+	padding: 5%;
+  }
+
+  .emailContainer label {
+	color: #f5f5f5;
+  }
+
+  
+/*media--------------------------------------------*/
+
+
+  @media only screen and (max-width: 768px) {
+	html {
+	  width: 100%;
+	}
+	.featured h1 {
+		font-size: 40px;
+	}
+	.featured h2 {
+		font-size: 20px;
+	}
+
+
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	p {
+		font-size: 16px;
+	}
+	.bookPic {
+		height: 20%;
+	}
+	.bookOnlineSection {
+		margin-top: 155%;
+		flex-direction: column-reverse;
+	}
+	.contactInfo {
+		flex-direction: column;
+
+	}
+  }
+
+  
+
+  @media screen (max-width: 968px) {
+	.aboutSection {
+		flex-direction: column;
+	
+    		margin: auto;
+	
+	}
+
+	.aboutSection img {
+	
+		height:500px;
+	}
+
+ }
+
+
+
+  @media screen and (max-width: 768px) {
+
+	
+	
+	.nav {
+	  padding: 1rem;
+	  position: fixed;
+	  flex: 1;
+	  top: 0;
+	  right: 0;
+	  display: flex;
+	  justify-content: center;
+	  align-items: flex-end;
+	  flex-direction: column;
+	}
+	
+	.navBlock ul li a{
+	  display: none;
+	}
+
+	.logo {
+		display: block;
+		align-items: center;
+		padding: .5rem;
+		height: 2.5rem;
+		
+	  }
+	
+	.hamburger {
+	  display: flex;
+	  color: white;
+	  float: right;
+	}
+	
+	/*   when hamburger icon is checked, nav links will pop out */
+	
+	#menu-toggle:checked ~ .nav-links {
+	  display: flex;
+	  flex-direction: column;
+	}
+  }
+  
