@@ -42,7 +42,7 @@ section {
 /*Body--------------------------------------------*/
 
 body {
-    background-image: url('/images/tools2.png');
+    background-image: url('images/tools2.png');
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Playfair Display', serif;
@@ -547,26 +547,14 @@ input[type=text], select, textarea {
 		flex-direction: column;
 
 	}
+	.aboutSection {
+		flex-direction: column;
+	}
   }
 
   
 
-  @media screen (max-width: 968px) {
-	.aboutSection {
-		flex-direction: column;
-	
-    		margin: auto;
-	
-	}
-
-	.aboutSection img {
-	
-		height:500px;
-	}
-
- }
-
-
+  
 
   @media screen and (max-width: 768px) {
 
