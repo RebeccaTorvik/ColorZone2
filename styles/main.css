@@ -42,7 +42,7 @@ section {
 /*Body--------------------------------------------*/
 
 body {
-    background-image: url(/images/tools2.png);
+    background-image: url('../images/tools2.png');
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Playfair Display', serif;
@@ -290,7 +290,7 @@ body {
 }
 .box1 {
 	height: 100vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/cutting.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cutting.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -361,7 +361,7 @@ body {
 
 
 .box2 {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/dye.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dye.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;	
@@ -372,13 +372,13 @@ textarea {
 	width: 100%;	
 }
 .box4 {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/style.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/style.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
 }
 .box3 {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/extend.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/extend.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
