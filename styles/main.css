@@ -511,7 +511,37 @@ input[type=text], select, textarea {
 	color: #f5f5f5;
   }
 
+/*Footer--------------------------------------------*/
   
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navFooter ul li a {
+	color: #f5f5f5;
+	line-height: 150%;
+}
+
+.footerFont a{
+	color: #f5f5f5;
+}
+
+.footerFont{
+	font-size: 16px;
+	color: #f5f5f5;
+}
+
+.socialFooter img {
+	height: 15px;
+	margin-top: 18%;
+}
+
+
+
+
+
 /*media--------------------------------------------*/
 
 
@@ -545,10 +575,23 @@ input[type=text], select, textarea {
 	}
 	.contactInfo {
 		flex-direction: column;
-
+	}
+	.emailContainer {
+		width: 100%;
 	}
 	.aboutSection {
 		flex-direction: column;
+	}
+	footer img {
+		width: 30%;
+	}
+
+	.footerFont{
+		font-size: 12px;
+	}
+	.socialFooter img {
+		height: 12px;
+		width: auto;
 	}
   }
 
